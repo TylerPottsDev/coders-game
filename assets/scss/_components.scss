@@ -1,0 +1,17 @@
+.c-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  color: #FFF;
+  background-color: $primary;
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+
+  &.disabled {
+    pointer-events: none;
+    background-color: darken($light, 15%);
+  }
+}
